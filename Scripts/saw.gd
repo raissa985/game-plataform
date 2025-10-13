@@ -16,7 +16,7 @@ var dir: Vector2
 
 
 func _ready() -> void:
-	
+	set_dir() # Adicione esta linha
 	pass
 	
 	
@@ -53,4 +53,4 @@ func _on_area_entered(area: Area2D) -> void:
 	if area.is_in_group("Player"):
 		print('Died')
 		area.get_parent().die()
-	pass 
+	pass

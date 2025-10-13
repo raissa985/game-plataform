@@ -62,6 +62,7 @@ script = ExtResource("1_mom4r")
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource("RectangleShape2D_faqml")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -74,6 +75,7 @@ frame_progress = 1.0
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
 position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_wom5a")
 debug_color = Color(0.998005, 0, 0.152842, 0.42)
