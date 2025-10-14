@@ -4,21 +4,23 @@
 [ext_resource type="Texture2D" uid="uid://dlnw7mluq5cd0" path="res://Sprites/Terrain/Terrain (16x16).png" id="1_qgwsj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fx5ne"]
-size = Vector2(46, 4)
+size = Vector2(68.5, 14)
 
 [node name="moving_platform" type="Node2D"]
-position = Vector2(30, 18)
+position = Vector2(69, 44)
 script = ExtResource("1_ckkw7")
 metadata/_edit_group_ = true
 
 [node name="plataforma" type="AnimatableBody2D" parent="."]
-position = Vector2(47, 26)
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="plataforma"]
+position = Vector2(-10.75, -1)
+scale = Vector2(1.40625, 0.875)
 texture = ExtResource("1_qgwsj")
 region_enabled = true
 region_rect = Rect2(192, 128, 48, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="plataforma"]
+position = Vector2(-10.25, -1)
 shape = SubResource("RectangleShape2D_fx5ne")
