@@ -696,7 +696,7 @@ stretch_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Player" parent="." groups=["Player", "group"] instance=ExtResource("2_u6rd3")]
-position = Vector2(19, 108)
+position = Vector2(2756, -245)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(0.75, 0.75)
@@ -1085,6 +1085,7 @@ text = "0"
 [node name="Flag" type="Area2D" parent="."]
 position = Vector2(2904, -368)
 script = ExtResource("10_p21hl")
+level = "WIN"
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Flag"]
