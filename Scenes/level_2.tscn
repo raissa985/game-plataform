@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=4 uid="uid://c8avv3jd3hcfx"]
+[gd_scene load_steps=64 format=4 uid="uid://dd8tbir3sj2ti"]
 
 [ext_resource type="Texture2D" uid="uid://b77m5js0nep53" path="res://Sprites/Background/Purple.png" id="1_4jlmw"]
 [ext_resource type="PackedScene" uid="uid://pb0tty710g7u" path="res://prefabs/player.tscn" id="2_b555v"]
@@ -13,72 +13,6 @@
 [ext_resource type="Texture2D" uid="uid://dlnw7mluq5cd0" path="res://Sprites/Terrain/Terrain (16x16).png" id="12_dvd7p"]
 [ext_resource type="Script" path="res://Scripts/flag.gd" id="13_n4nnc"]
 [ext_resource type="Texture2D" uid="uid://nltafjqelj1y" path="res://Sprites/Items/Checkpoints/Checkpoint/Checkpoint (Flag Idle)(64x64).png" id="14_bluxs"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1gyym"]
-atlas = ExtResource("4_n2b5l")
-region = Rect2(0, 0, 38, 38)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_sryd7"]
-atlas = ExtResource("4_n2b5l")
-region = Rect2(38, 0, 38, 38)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_p8nlc"]
-atlas = ExtResource("4_n2b5l")
-region = Rect2(76, 0, 38, 38)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qeicg"]
-atlas = ExtResource("4_n2b5l")
-region = Rect2(114, 0, 38, 38)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cmfon"]
-atlas = ExtResource("4_n2b5l")
-region = Rect2(152, 0, 38, 38)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_53pht"]
-atlas = ExtResource("4_n2b5l")
-region = Rect2(190, 0, 38, 38)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bdwhx"]
-atlas = ExtResource("4_n2b5l")
-region = Rect2(228, 0, 38, 38)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qn7xh"]
-atlas = ExtResource("4_n2b5l")
-region = Rect2(266, 0, 38, 38)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_x5jrm"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1gyym")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_sryd7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_p8nlc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qeicg")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cmfon")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_53pht")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bdwhx")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qn7xh")
-}],
-"loop": true,
-"name": &"default",
-"speed": 30.0
-}]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_6m00v"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j600u"]
 texture = ExtResource("12_dvd7p")
@@ -340,6 +274,73 @@ texture = ExtResource("12_dvd7p")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_j600u")
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_mji7i"]
+atlas = ExtResource("4_n2b5l")
+region = Rect2(0, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_evgli"]
+atlas = ExtResource("4_n2b5l")
+region = Rect2(38, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y76y1"]
+atlas = ExtResource("4_n2b5l")
+region = Rect2(76, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nsxcq"]
+atlas = ExtResource("4_n2b5l")
+region = Rect2(114, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_efrpx"]
+atlas = ExtResource("4_n2b5l")
+region = Rect2(152, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1xcep"]
+atlas = ExtResource("4_n2b5l")
+region = Rect2(190, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gqoec"]
+atlas = ExtResource("4_n2b5l")
+region = Rect2(228, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2jewo"]
+atlas = ExtResource("4_n2b5l")
+region = Rect2(266, 0, 38, 38)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x5jrm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mji7i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_evgli")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y76y1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nsxcq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_efrpx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1xcep")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gqoec")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2jewo")
+}],
+"loop": true,
+"name": &"default",
+"speed": 30.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6m00v"]
+radius = 6.08276
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_c4brs"]
 atlas = ExtResource("14_bluxs")
 region = Rect2(0, 0, 64, 64)
@@ -420,9 +421,6 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gjm71"]
 size = Vector2(28, 46)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_b2t21"]
-size = Vector2(20, 264)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_um04p"]
 atlas = ExtResource("7_xiku3")
@@ -605,6 +603,9 @@ animations = [{
 radius = 6.0
 height = 20.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b2t21"]
+size = Vector2(20, 264)
+
 [node name="Level2" type="Node2D"]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
@@ -628,117 +629,85 @@ zoom = Vector2(0.75, 0.75)
 limit_left = 2
 limit_bottom = 202
 
-[node name="Saw" type="Area2D" parent="."]
-position = Vector2(280, 138)
-script = ExtResource("3_p3t8g")
-distance = 175.0
-metadata/_edit_group_ = true
+[node name="TileMap" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAAAAwAAAAGAAkAAAAAAA0AAAAGAAoAAAABAAwAAAAHAAkAAAABAA0AAAAHAAoAAAACAAwAAAAHAAkAAAACAA0AAAAHAAoAAAADAAwAAAAHAAkAAAADAA0AAAAHAAoAAAAEAAwAAAAHAAkAAAAEAA0AAAAHAAoAAAAAAAkAAAAGAAgAAAAAAAoAAAAGAAkAAAAAAAsAAAAGAAkAAAABAAkAAAAHAAgAAAACAAkAAAAHAAgAAAADAAkAAAAHAAgAAAAEAAkAAAAHAAgAAAAFAAkAAAAHAAgAAAAGAAkAAAAHAAgAAAAHAAkAAAAHAAgAAAAIAAkAAAAGAAkAAAAHAAwAAAAHAAkAAAABAAoAAAAHAAkAAAABAAsAAAAHAAkAAAACAAsAAAAHAAkAAAACAAoAAAAHAAkAAAADAAoAAAAHAAkAAAADAAsAAAAHAAkAAAAEAAsAAAAHAAkAAAAEAAoAAAAHAAkAAAAFAAsAAAAHAAkAAAAFAAoAAAAHAAkAAAAGAAoAAAAHAAkAAAAHAAoAAAAHAAkAAAAHAAsAAAAHAAkAAAAGAAwAAAAHAAkAAAAFAAwAAAAHAAkAAAAGAAsAAAAHAAkAAAAFAA0AAAAHAAoAAAAGAA0AAAAHAAoAAAAHAA0AAAAHAAoAAAAIAA0AAAAGAAoAAAAIAAoAAAAGAAkAAAAIAAwAAAAGAAkAAAAIAAsAAAAGAAkAAAAJAA0AAAAIAAoAAAAJAAwAAAAIAAkAAAAJAAsAAAAIAAkAAAAJAAoAAAAIAAkAAAAJAAkAAAAIAAkAAAAIAAgAAAAGAAkAAAAIAAcAAAAGAAgAAAAJAAcAAAAIAAgAAAAJAAgAAAAIAAkAAAAKAAUAAAAGAAgAAAAKAAYAAAAGAAkAAAAKAAcAAAAGAAkAAAAKAAgAAAAGAAkAAAAKAAkAAAAGAAkAAAAKAAoAAAAGAAkAAAAKAAsAAAAGAAkAAAALAAUAAAAIAAgAAAALAAYAAAAIAAkAAAALAAcAAAAIAAkAAAALAAgAAAAIAAkAAAALAAkAAAAIAAkAAAALAAoAAAAIAAkAAAALAAsAAAAIAAkAAAAMAAMAAAAGAAgAAAAMAAQAAAAGAAkAAAAMAAUAAAAGAAkAAAAMAAYAAAAGAAkAAAAMAAcAAAAGAAkAAAAMAAgAAAAGAAkAAAAMAAkAAAAGAAkAAAANAAMAAAAIAAgAAAANAAQAAAAIAAkAAAANAAUAAAAIAAkAAAANAAYAAAAIAAkAAAANAAcAAAAIAAkAAAANAAgAAAAIAAkAAAANAAkAAAAIAAkAAAAOAAIAAAAGAAkAAAAOAAMAAAAGAAkAAAAOAAQAAAAGAAkAAAAOAAUAAAAGAAkAAAAOAAYAAAAGAAkAAAAOAAcAAAAGAAkAAAAPAAEAAAAHAAgAAAAKAA0AAAAGAAoAAAALAA0AAAAIAAoAAAAMAA0AAAAGAAoAAAANAA0AAAAIAAoAAAAOAA0AAAAGAAoAAAAKAAwAAAAGAAkAAAALAAwAAAAIAAkAAAAMAAoAAAAGAAkAAAAMAAsAAAAGAAkAAAAMAAwAAAAGAAkAAAANAAoAAAAIAAkAAAANAAsAAAAIAAkAAAANAAwAAAAIAAkAAAAOAAwAAAAGAAkAAAAOAAsAAAAGAAkAAAAOAAoAAAAGAAkAAAAOAAkAAAAGAAkAAAAOAAgAAAAGAAkAAAAQAAEAAAAHAAgAAAARAAEAAAAIAAgAAAARAAIAAAAIAAkAAAARAAMAAAAIAAkAAAARAAQAAAAIAAkAAAARAAUAAAAIAAkAAAARAAYAAAAIAAkAAAARAAcAAAAIAAkAAAARAAgAAAAIAAkAAAARAAkAAAAIAAkAAAARAAoAAAAIAAkAAAARAAsAAAAIAAkAAAARAAwAAAAIAAkAAAARAA0AAAAIAAoAAAAQAA0AAAAHAAoAAAAPAA0AAAAHAAoAAAAPAAwAAAAHAAkAAAAPAAsAAAAHAAkAAAAPAAoAAAAHAAkAAAAPAAkAAAAHAAkAAAAPAAgAAAAHAAkAAAAPAAcAAAAHAAkAAAAPAAYAAAAHAAkAAAAPAAUAAAAHAAkAAAAPAAQAAAAHAAkAAAAPAAMAAAAHAAkAAAAPAAIAAAAHAAkAAAAQAAIAAAAHAAkAAAAQAAMAAAAHAAkAAAAQAAQAAAAHAAkAAAAQAAUAAAAHAAkAAAAQAAYAAAAHAAkAAAAQAAcAAAAHAAkAAAAQAAgAAAAHAAkAAAAQAAkAAAAHAAkAAAAQAAoAAAAHAAkAAAAQAAsAAAAHAAkAAAAQAAwAAAAHAAkAAAASAAMAAAAGAAgAAAASAAQAAAAGAAkAAAASAAUAAAAGAAkAAAASAAYAAAAGAAkAAAASAAcAAAAGAAkAAAATAAMAAAAHAAgAAAAUAAMAAAAHAAgAAAAVAAMAAAAHAAgAAAAWAAMAAAAHAAgAAAAXAAMAAAAHAAgAAAAYAAMAAAAHAAgAAAAZAAMAAAAHAAgAAAAaAAMAAAAHAAgAAAAbAAMAAAAHAAgAAAAcAAMAAAAHAAgAAAAdAAMAAAAIAAgAAAAdAAQAAAAIAAkAAAAdAAUAAAAIAAkAAAAdAAYAAAAIAAkAAAAdAAcAAAAIAAkAAAATAAQAAAAHAAkAAAATAAUAAAAHAAkAAAATAAYAAAAHAAkAAAATAAcAAAAHAAkAAAAUAAcAAAAHAAkAAAAVAAcAAAAHAAkAAAAVAAYAAAAHAAkAAAAWAAYAAAAHAAkAAAAWAAUAAAAHAAkAAAAWAAQAAAAHAAkAAAAVAAQAAAAHAAkAAAAUAAQAAAAHAAkAAAAUAAUAAAAHAAkAAAAUAAYAAAAHAAkAAAAVAAUAAAAHAAkAAAAXAAQAAAAHAAkAAAAYAAQAAAAHAAkAAAAZAAQAAAAHAAkAAAAaAAQAAAAHAAkAAAAbAAQAAAAHAAkAAAAcAAQAAAAHAAkAAAAcAAUAAAAHAAkAAAAcAAYAAAAHAAkAAAAcAAcAAAAHAAkAAAAbAAcAAAAHAAkAAAAaAAcAAAAHAAkAAAAZAAcAAAAHAAkAAAAYAAcAAAAHAAkAAAAXAAcAAAAHAAkAAAAWAAcAAAAHAAkAAAAXAAUAAAAHAAkAAAAYAAUAAAAHAAkAAAAZAAUAAAAHAAkAAAAaAAUAAAAHAAkAAAAbAAUAAAAHAAkAAAAbAAYAAAAHAAkAAAAaAAYAAAAHAAkAAAAZAAYAAAAHAAkAAAAYAAYAAAAHAAkAAAAXAAYAAAAHAAkAAAAOAAEAAAAGAAgAAAAeAAEAAAAGAAgAAAAeAAIAAAAGAAkAAAAeAAMAAAAGAAkAAAAeAAQAAAAGAAkAAAAeAAUAAAAGAAkAAAAeAAYAAAAGAAkAAAAeAAcAAAAGAAkAAAAeAAgAAAAGAAoAAAAfAAEAAAAHAAgAAAAfAAIAAAAHAAkAAAAfAAMAAAAHAAkAAAAfAAQAAAAHAAkAAAAfAAUAAAAHAAkAAAAfAAYAAAAHAAkAAAAfAAcAAAAHAAkAAAAfAAgAAAAHAAoAAAAgAAEAAAAHAAgAAAAgAAIAAAAHAAkAAAAgAAMAAAAHAAkAAAAgAAQAAAAHAAkAAAAgAAUAAAAHAAkAAAAgAAYAAAAHAAkAAAAgAAcAAAAHAAkAAAAgAAgAAAAHAAoAAAAhAAEAAAAIAAgAAAAhAAIAAAAIAAkAAAAhAAMAAAAIAAkAAAAhAAQAAAAIAAkAAAAhAAUAAAAIAAkAAAAhAAYAAAAIAAkAAAAhAAcAAAAIAAkAAAAhAAgAAAAIAAoAAAASAAgAAAAGAAoAAAATAAgAAAAHAAoAAAAUAAgAAAAHAAoAAAAVAAgAAAAHAAoAAAAWAAgAAAAHAAoAAAAXAAgAAAAHAAoAAAAYAAgAAAAHAAoAAAAZAAgAAAAHAAoAAAAaAAgAAAAHAAoAAAAbAAgAAAAHAAoAAAAcAAgAAAAHAAoAAAAdAAgAAAAIAAoAAAA/APj/AAAGAAgAAAA/APn/AAAGAAkAAAA/APr/AAAGAAoAAABAAPj/AAAHAAgAAABAAPn/AAAHAAkAAABAAPr/AAAHAAoAAABBAPj/AAAHAAgAAABBAPn/AAAHAAkAAABBAPr/AAAHAAoAAABCAPj/AAAHAAgAAABCAPn/AAAHAAkAAABCAPr/AAAHAAoAAABDAPj/AAAHAAgAAABDAPn/AAAHAAkAAABDAPr/AAAHAAoAAABEAPj/AAAHAAgAAABEAPn/AAAHAAkAAABEAPr/AAAHAAoAAABFAPj/AAAHAAgAAABFAPn/AAAHAAkAAABFAPr/AAAHAAoAAABGAPj/AAAIAAgAAABGAPn/AAAIAAkAAABGAPr/AAAIAAoAAAA=")
+tile_set = SubResource("TileSet_ja28n")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Saw"]
-sprite_frames = SubResource("SpriteFrames_x5jrm")
-autoplay = "default"
-frame = 7
-frame_progress = 1.0
+[node name="serras" type="Node2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Saw"]
-visible = false
-scale = Vector2(2, 2)
-shape = SubResource("CircleShape2D_6m00v")
-
-[node name="Saw2" type="Area2D" parent="."]
-position = Vector2(373, 138)
-script = ExtResource("3_p3t8g")
-distance = 175.0
-metadata/_edit_group_ = true
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Saw2"]
-sprite_frames = SubResource("SpriteFrames_x5jrm")
-autoplay = "default"
-frame = 7
-frame_progress = 1.0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Saw2"]
-visible = false
-scale = Vector2(2, 2)
-shape = SubResource("CircleShape2D_6m00v")
-
-[node name="Saw3" type="Area2D" parent="."]
-position = Vector2(470, 137)
-script = ExtResource("3_p3t8g")
-distance = 175.0
-metadata/_edit_group_ = true
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Saw3"]
-sprite_frames = SubResource("SpriteFrames_x5jrm")
-autoplay = "default"
-frame = 7
-frame_progress = 1.0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Saw3"]
-visible = false
-scale = Vector2(2, 2)
-shape = SubResource("CircleShape2D_6m00v")
-
-[node name="Saw4" type="Area2D" parent="."]
-position = Vector2(569, 93)
-script = ExtResource("3_p3t8g")
-distance = 175.0
-metadata/_edit_group_ = true
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Saw4"]
-sprite_frames = SubResource("SpriteFrames_x5jrm")
-autoplay = "default"
-frame = 7
-frame_progress = 1.0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Saw4"]
-visible = false
-scale = Vector2(2, 2)
-shape = SubResource("CircleShape2D_6m00v")
-
-[node name="Saw5" type="Area2D" parent="."]
-position = Vector2(664, 48)
-script = ExtResource("3_p3t8g")
-distance = 175.0
-metadata/_edit_group_ = true
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Saw5"]
-sprite_frames = SubResource("SpriteFrames_x5jrm")
-autoplay = "default"
-frame = 7
-frame_progress = 1.0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Saw5"]
-visible = false
-scale = Vector2(2, 2)
-shape = SubResource("CircleShape2D_6m00v")
-
-[node name="Saw6" type="Area2D" parent="."]
-position = Vector2(757, -6)
+[node name="Saw" type="Area2D" parent="serras"]
+position = Vector2(301, 34)
 script = ExtResource("3_p3t8g")
 move_dir = 3
-distance = 150.0
+distance = 165.0
 metadata/_edit_group_ = true
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Saw6"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="serras/Saw"]
+scale = Vector2(0.605263, 0.605263)
 sprite_frames = SubResource("SpriteFrames_x5jrm")
 autoplay = "default"
 frame = 7
 frame_progress = 1.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Saw6"]
-visible = false
+[node name="CollisionShape2D" type="CollisionShape2D" parent="serras/Saw"]
 scale = Vector2(2, 2)
 shape = SubResource("CircleShape2D_6m00v")
 
-[node name="Box5" parent="." instance=ExtResource("5_p5yh0")]
-position = Vector2(770, -60)
+[node name="Saw4" type="Area2D" parent="serras"]
+position = Vector2(781, 51)
+scale = Vector2(1.21642, 1.21642)
+script = ExtResource("3_p3t8g")
+distance = 190.0
+metadata/_edit_group_ = true
 
-[node name="Box6" parent="." instance=ExtResource("5_p5yh0")]
-position = Vector2(840, -60)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="serras/Saw4"]
+scale = Vector2(0.605263, 0.605263)
+sprite_frames = SubResource("SpriteFrames_x5jrm")
+autoplay = "default"
+frame = 7
+frame_progress = 1.0
 
-[node name="Box7" parent="." instance=ExtResource("5_p5yh0")]
-position = Vector2(910, -60)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="serras/Saw4"]
+scale = Vector2(2, 2)
+shape = SubResource("CircleShape2D_6m00v")
+
+[node name="Saw5" type="Area2D" parent="serras"]
+position = Vector2(988, -65)
+scale = Vector2(1.21642, 1.21642)
+script = ExtResource("3_p3t8g")
+distance = 190.0
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="serras/Saw5"]
+scale = Vector2(0.605263, 0.605263)
+sprite_frames = SubResource("SpriteFrames_x5jrm")
+autoplay = "default"
+frame = 7
+frame_progress = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="serras/Saw5"]
+scale = Vector2(2, 2)
+shape = SubResource("CircleShape2D_6m00v")
+
+[node name="boxes" type="Node2D" parent="."]
+
+[node name="Box5" parent="boxes" instance=ExtResource("5_p5yh0")]
+position = Vector2(600, 30)
+
+[node name="Box6" parent="boxes" instance=ExtResource("5_p5yh0")]
+position = Vector2(670, 30)
+
+[node name="Box7" parent="boxes" instance=ExtResource("5_p5yh0")]
+position = Vector2(740, 30)
+
+[node name="Box8" parent="boxes" instance=ExtResource("5_p5yh0")]
+position = Vector2(810, -15)
+
+[node name="Box9" parent="boxes" instance=ExtResource("5_p5yh0")]
+position = Vector2(880, -50)
+
+[node name="Box10" parent="boxes" instance=ExtResource("5_p5yh0")]
+position = Vector2(950, -85)
 
 [node name="HUD" type="CanvasLayer" parent="."]
 script = ExtResource("9_mu5ay")
@@ -764,12 +733,8 @@ theme_override_fonts/font = ExtResource("11_fpx3j")
 theme_override_font_sizes/font_size = 10
 text = "0"
 
-[node name="TileMap" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAAAAAwAAAAGAAEAAAAAAA0AAAAGAAIAAAABAAwAAAAHAAEAAAABAA0AAAAHAAIAAAACAAwAAAAHAAEAAAACAA0AAAAHAAIAAAADAAwAAAAHAAEAAAADAA0AAAAHAAIAAAAEAAwAAAAHAAEAAAAEAA0AAAAHAAIAAAAAAAkAAAAGAAAAAAAAAAoAAAAGAAEAAAAAAAsAAAAGAAEAAAABAAkAAAAHAAAAAAACAAkAAAAHAAAAAAADAAkAAAAHAAAAAAAEAAkAAAAHAAAAAAAFAAkAAAAHAAAAAAAGAAkAAAAHAAAAAAAHAAkAAAAHAAAAAAAIAAkAAAAHAAAAAAAHAAwAAAAHAAEAAAABAAoAAAAHAAEAAAABAAsAAAAHAAEAAAACAAsAAAAHAAEAAAACAAoAAAAHAAEAAAADAAoAAAAHAAEAAAADAAsAAAAHAAEAAAAEAAsAAAAHAAEAAAAEAAoAAAAHAAEAAAAFAAsAAAAHAAEAAAAFAAoAAAAHAAEAAAAGAAoAAAAHAAEAAAAHAAoAAAAHAAEAAAAHAAsAAAAHAAEAAAAGAAwAAAAHAAEAAAAFAAwAAAAHAAEAAAAGAAsAAAAHAAEAAAAJAAkAAAAHAAAAAAAKAAkAAAAIAAAAAAAKAAoAAAAIAAEAAAAKAAsAAAAIAAEAAAAKAAwAAAAIAAEAAAAFAA0AAAAHAAIAAAAGAA0AAAAHAAIAAAAHAA0AAAAHAAIAAAAIAA0AAAAHAAIAAAAJAA0AAAAHAAIAAAAKAA0AAAAIAAIAAAAIAAoAAAAHAAEAAAAJAAoAAAAHAAEAAAAJAAsAAAAHAAEAAAAJAAwAAAAHAAEAAAAIAAwAAAAHAAEAAAAIAAsAAAAHAAEAAAANAAcAAAARAAQAAAANAAgAAAARAAYAAAAOAAcAAAATAAQAAAAOAAgAAAATAAYAAAAZAAcAAAARAAQAAAAZAAgAAAARAAYAAAAaAAcAAAATAAQAAAAaAAgAAAATAAYAAAATAAQAAAARAAQAAAATAAUAAAARAAYAAAAUAAQAAAATAAQAAAAUAAUAAAATAAYAAAAfAAQAAAARAAQAAAAfAAUAAAARAAYAAAAgAAQAAAATAAQAAAAgAAUAAAATAAYAAAAlAAEAAAARAAQAAAAlAAIAAAARAAYAAAAmAAEAAAATAAQAAAAmAAIAAAATAAYAAAArAP7/AAARAAQAAAArAP//AAARAAYAAAAsAP7/AAATAAQAAAAsAP//AAATAAYAAAA+APz/AAAGAAAAAAA+AP3/AAAGAAEAAAA/APz/AAAHAAAAAAA/AP3/AAAHAAEAAABAAPz/AAAHAAAAAABAAP3/AAAHAAEAAABBAPz/AAAHAAAAAABBAP3/AAAHAAEAAABCAPz/AAAHAAAAAABCAP3/AAAHAAEAAABDAPz/AAAHAAAAAABDAP3/AAAHAAEAAABEAPz/AAAHAAAAAABEAP3/AAAHAAEAAABFAPz/AAAIAAAAAABFAP3/AAAIAAEAAAA+AP7/AAAGAAIAAAA/AP7/AAAHAAIAAABAAP7/AAAHAAIAAABBAP7/AAAHAAIAAABCAP7/AAAHAAIAAABDAP7/AAAHAAIAAABEAP7/AAAHAAIAAABFAP7/AAAIAAIAAAAuAAMAAAAGAAIAAAAvAAMAAAAHAAIAAAAwAAMAAAAHAAIAAAAxAAMAAAAHAAIAAAAyAAMAAAAHAAIAAAAzAAMAAAAHAAIAAAA0AAMAAAAHAAIAAAA1AAMAAAAHAAIAAAA2AAMAAAAHAAIAAAA3AAMAAAAHAAIAAAA4AAMAAAAHAAIAAAA5AAMAAAAHAAIAAAA6AAMAAAAHAAIAAAA7AAMAAAAHAAIAAAAuAAEAAAAGAAAAAAAuAAIAAAAGAAEAAAAvAAEAAAAHAAAAAAAvAAIAAAAHAAEAAAAwAAEAAAAHAAAAAAAwAAIAAAAHAAEAAAAxAAEAAAAHAAAAAAAxAAIAAAAHAAEAAAAyAAEAAAAHAAAAAAAyAAIAAAAHAAEAAAAzAAEAAAAHAAAAAAAzAAIAAAAHAAEAAAA0AAEAAAAHAAAAAAA0AAIAAAAHAAEAAAA1AAEAAAAHAAAAAAA1AAIAAAAHAAEAAAA2AAEAAAAHAAAAAAA2AAIAAAAHAAEAAAA3AAEAAAAHAAAAAAA3AAIAAAAHAAEAAAA4AAEAAAAHAAAAAAA4AAIAAAAHAAEAAAA5AAEAAAAHAAAAAAA5AAIAAAAHAAEAAAA6AAEAAAAHAAAAAAA6AAIAAAAHAAEAAAA7AAEAAAAHAAAAAAA7AAIAAAAHAAEAAAA8AAEAAAAIAAAAAAA8AAIAAAAIAAEAAAA8AAMAAAAIAAIAAAA=")
-tile_set = SubResource("TileSet_ja28n")
-
 [node name="Flag" type="Area2D" parent="."]
-position = Vector2(1113, -95)
+position = Vector2(1135, -161)
 script = ExtResource("13_n4nnc")
 level = "res://Scenes/level_3.tscn"
 metadata/_edit_group_ = true
@@ -783,18 +748,11 @@ frame_progress = 0.492973
 position = Vector2(2, 9)
 shape = SubResource("RectangleShape2D_gjm71")
 
-[node name="LeftWall" type="StaticBody2D" parent="."]
-position = Vector2(-11, 14)
-metadata/_edit_group_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
-shape = SubResource("RectangleShape2D_b2t21")
-
 [node name="Frutas" type="Node2D" parent="."]
 position = Vector2(77, 106)
 
 [node name="Fruit1" type="Area2D" parent="Frutas"]
-position = Vector2(9, 24)
+position = Vector2(38, 28)
 script = ExtResource("6_281oa")
 metadata/_edit_group_ = true
 
@@ -808,11 +766,319 @@ frame_progress = 0.148033
 visible = false
 shape = SubResource("CapsuleShape2D_wlldx")
 
-[connection signal="area_entered" from="Saw" to="Saw" method="_on_area_entered"]
-[connection signal="area_entered" from="Saw2" to="Saw2" method="_on_area_entered"]
-[connection signal="area_entered" from="Saw3" to="Saw3" method="_on_area_entered"]
-[connection signal="area_entered" from="Saw4" to="Saw4" method="_on_area_entered"]
-[connection signal="area_entered" from="Saw5" to="Saw5" method="_on_area_entered"]
-[connection signal="area_entered" from="Saw6" to="Saw6" method="_on_area_entered"]
+[node name="Fruit2" type="Area2D" parent="Frutas"]
+position = Vector2(66, -4)
+script = ExtResource("6_281oa")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit2"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.148033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit2"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit3" type="Area2D" parent="Frutas"]
+position = Vector2(98, -37)
+script = ExtResource("6_281oa")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit3"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.148033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit3"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit4" type="Area2D" parent="Frutas"]
+position = Vector2(131, -70)
+script = ExtResource("6_281oa")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit4"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.148033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit4"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit5" type="Area2D" parent="Frutas"]
+position = Vector2(179, -101)
+script = ExtResource("6_281oa")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit5"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.148033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit5"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit6" type="Area2D" parent="Frutas"]
+position = Vector2(230, -69)
+script = ExtResource("6_281oa")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit6"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.148033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit6"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit7" type="Area2D" parent="Frutas"]
+position = Vector2(260, -69)
+script = ExtResource("6_281oa")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit7"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.148033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit7"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit8" type="Area2D" parent="Frutas"]
+position = Vector2(290, -69)
+script = ExtResource("6_281oa")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit8"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.148033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit8"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit9" type="Area2D" parent="Frutas"]
+position = Vector2(320, -69)
+script = ExtResource("6_281oa")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit9"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.148033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit9"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit10" type="Area2D" parent="Frutas"]
+position = Vector2(350, -69)
+script = ExtResource("6_281oa")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit10"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.148033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit10"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit11" type="Area2D" parent="Frutas"]
+position = Vector2(380, -69)
+script = ExtResource("6_281oa")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit11"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.148033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit11"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit12" type="Area2D" parent="Frutas"]
+position = Vector2(433, -101)
+script = ExtResource("6_281oa")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit12"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.148033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit12"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit13" type="Area2D" parent="Frutas"]
+position = Vector2(522, -101)
+script = ExtResource("6_281oa")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit13"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.148033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit13"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit14" type="Area2D" parent="Frutas"]
+position = Vector2(592, -101)
+script = ExtResource("6_281oa")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit14"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.148033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit14"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit15" type="Area2D" parent="Frutas"]
+position = Vector2(662, -101)
+script = ExtResource("6_281oa")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit15"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.148033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit15"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit16" type="Area2D" parent="Frutas"]
+position = Vector2(732, -146)
+script = ExtResource("6_281oa")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit16"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.148033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit16"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit17" type="Area2D" parent="Frutas"]
+position = Vector2(802, -181)
+script = ExtResource("6_281oa")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit17"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.148033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit17"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit18" type="Area2D" parent="Frutas"]
+position = Vector2(872, -216)
+script = ExtResource("6_281oa")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit18"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.148033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit18"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit19" type="Area2D" parent="Frutas"]
+position = Vector2(971, -245)
+script = ExtResource("6_281oa")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit19"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.148033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit19"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit20" type="Area2D" parent="Frutas"]
+position = Vector2(1011, -245)
+script = ExtResource("6_281oa")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit20"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.148033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit20"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="LeftWall" type="StaticBody2D" parent="."]
+position = Vector2(-11, 14)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+shape = SubResource("RectangleShape2D_b2t21")
+
+[connection signal="area_entered" from="serras/Saw" to="serras/Saw" method="_on_area_entered"]
+[connection signal="area_entered" from="serras/Saw4" to="serras/Saw4" method="_on_area_entered"]
+[connection signal="area_entered" from="serras/Saw5" to="serras/Saw5" method="_on_area_entered"]
 [connection signal="area_entered" from="Flag" to="Flag" method="_on_area_entered"]
 [connection signal="area_entered" from="Frutas/Fruit1" to="Frutas/Fruit1" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit2" to="Frutas/Fruit2" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit3" to="Frutas/Fruit3" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit4" to="Frutas/Fruit4" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit5" to="Frutas/Fruit5" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit6" to="Frutas/Fruit6" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit7" to="Frutas/Fruit7" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit8" to="Frutas/Fruit8" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit9" to="Frutas/Fruit9" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit10" to="Frutas/Fruit10" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit11" to="Frutas/Fruit11" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit12" to="Frutas/Fruit12" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit13" to="Frutas/Fruit13" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit14" to="Frutas/Fruit14" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit15" to="Frutas/Fruit15" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit16" to="Frutas/Fruit16" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit17" to="Frutas/Fruit17" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit18" to="Frutas/Fruit18" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit19" to="Frutas/Fruit19" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit20" to="Frutas/Fruit20" method="_on_area_entered"]

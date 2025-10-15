@@ -3,7 +3,7 @@ extends CharacterBody2D
 var speed = 160
 var jump_velocity = -500
 var dir
-var gravity = 980
+var gravity = 950
 
 var jumps = 1
 
@@ -79,7 +79,7 @@ func die():
 	$CollisionShape2D.queue_free()
 	$Area2D.queue_free()
 	
-	velocity.y = jump_velocity
+	velocity.y = jump_velocity 
 	
 	camera_zoom()
 

@@ -633,9 +633,9 @@ limit_left = 2
 limit_bottom = 202
 
 [node name="Saw" type="Area2D" parent="."]
-position = Vector2(222, 181)
+position = Vector2(222, 235)
 script = ExtResource("2_5ohr0")
-distance = 180.0
+distance = 250.0
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Saw"]
@@ -650,9 +650,9 @@ scale = Vector2(2, 2)
 shape = SubResource("CircleShape2D_6m00v")
 
 [node name="Saw2" type="Area2D" parent="."]
-position = Vector2(474, 146)
+position = Vector2(471, 224)
 script = ExtResource("2_5ohr0")
-distance = 155.0
+distance = 200.0
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Saw2"]
@@ -863,6 +863,126 @@ frame_progress = 0.210697
 visible = false
 shape = SubResource("CapsuleShape2D_wlldx")
 
+[node name="Fruit11" type="Area2D" parent="Frutas"]
+position = Vector2(434, 59)
+script = ExtResource("5_ic7w1")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit11"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.210697
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit11"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit12" type="Area2D" parent="Frutas"]
+position = Vector2(498, 59)
+script = ExtResource("5_ic7w1")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit12"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.210697
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit12"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit13" type="Area2D" parent="Frutas"]
+position = Vector2(561, 25)
+script = ExtResource("5_ic7w1")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit13"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.210697
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit13"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit14" type="Area2D" parent="Frutas"]
+position = Vector2(647, -5)
+script = ExtResource("5_ic7w1")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit14"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.210697
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit14"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit15" type="Area2D" parent="Frutas"]
+position = Vector2(687, -5)
+script = ExtResource("5_ic7w1")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit15"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.210697
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit15"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit16" type="Area2D" parent="Frutas"]
+position = Vector2(727, -5)
+script = ExtResource("5_ic7w1")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit16"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.210697
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit16"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit17" type="Area2D" parent="Frutas"]
+position = Vector2(981, -117)
+script = ExtResource("5_ic7w1")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit17"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.210697
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit17"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit18" type="Area2D" parent="Frutas"]
+position = Vector2(1021, -117)
+script = ExtResource("5_ic7w1")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit18"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.210697
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit18"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
 [connection signal="area_entered" from="Saw" to="Saw" method="_on_area_entered"]
 [connection signal="area_entered" from="Saw2" to="Saw2" method="_on_area_entered"]
 [connection signal="area_entered" from="Flag" to="Flag" method="_on_area_entered"]
@@ -875,3 +995,11 @@ shape = SubResource("CapsuleShape2D_wlldx")
 [connection signal="area_entered" from="Frutas/Fruit8" to="Frutas/Fruit8" method="_on_area_entered"]
 [connection signal="area_entered" from="Frutas/Fruit9" to="Frutas/Fruit9" method="_on_area_entered"]
 [connection signal="area_entered" from="Frutas/Fruit10" to="Frutas/Fruit10" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit11" to="Frutas/Fruit11" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit12" to="Frutas/Fruit12" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit13" to="Frutas/Fruit13" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit14" to="Frutas/Fruit14" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit15" to="Frutas/Fruit15" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit16" to="Frutas/Fruit16" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit17" to="Frutas/Fruit17" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit18" to="Frutas/Fruit18" method="_on_area_entered"]

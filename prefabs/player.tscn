@@ -177,7 +177,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Hit",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -300,6 +300,7 @@ position = Vector2(0.0169983, 1)
 sprite_frames = SubResource("SpriteFrames_tjfy7")
 animation = &"Hit"
 autoplay = "Idle"
+frame_progress = 0.532383
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false

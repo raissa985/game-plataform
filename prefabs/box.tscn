@@ -57,12 +57,11 @@ size = Vector2(16, 29)
 [sub_resource type="Gradient" id="Gradient_4ykww"]
 
 [node name="Box" type="StaticBody2D"]
-position = Vector2(123, 132)
+scale = Vector2(1.40631, 1.40631)
 script = ExtResource("1_mom4r")
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 shape = SubResource("RectangleShape2D_faqml")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -76,7 +75,6 @@ frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 visible = false
-position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_wom5a")
 debug_color = Color(0.998005, 0, 0.152842, 0.42)
 

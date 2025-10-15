@@ -614,15 +614,15 @@ height = 20.0
 motion_scale = Vector2(0.2, 0.2)
 
 [node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer"]
-offset_left = -116.0
-offset_top = -194.0
-offset_right = 1210.0
-offset_bottom = 351.0
+offset_left = -45.0
+offset_top = -1414.0
+offset_right = 3952.0
+offset_bottom = 229.0
 texture = ExtResource("1_px0pw")
 stretch_mode = 1
 
 [node name="Player" parent="." groups=["Player", "group"] instance=ExtResource("2_iohwl")]
-position = Vector2(13, 107)
+position = Vector2(20, 113)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(0.75, 0.75)
@@ -633,7 +633,7 @@ limit_bottom = 202
 position = Vector2(200, 127)
 script = ExtResource("3_s6byf")
 move_dir = 3
-speed = 80.0
+speed = 110.0
 distance = 300.0
 metadata/_edit_group_ = true
 
@@ -648,14 +648,40 @@ visible = false
 scale = Vector2(2, 2)
 shape = SubResource("CircleShape2D_6m00v")
 
+[node name="Saw2" type="Area2D" parent="."]
+position = Vector2(653, -242)
+script = ExtResource("3_s6byf")
+distance = 300.0
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Saw2"]
+sprite_frames = SubResource("SpriteFrames_x5jrm")
+autoplay = "default"
+frame = 7
+frame_progress = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Saw2"]
+visible = false
+scale = Vector2(2, 2)
+shape = SubResource("CircleShape2D_6m00v")
+
 [node name="Box5" parent="." instance=ExtResource("5_e727v")]
-position = Vector2(770, -60)
+position = Vector2(606, -280)
 
 [node name="Box6" parent="." instance=ExtResource("5_e727v")]
-position = Vector2(840, -60)
+position = Vector2(696, -330)
 
 [node name="Box7" parent="." instance=ExtResource("5_e727v")]
-position = Vector2(910, -60)
+position = Vector2(606, -380)
+
+[node name="Box9" parent="." instance=ExtResource("5_e727v")]
+position = Vector2(605, -480)
+
+[node name="Box8" parent="." instance=ExtResource("5_e727v")]
+position = Vector2(696, -430)
+
+[node name="Box10" parent="." instance=ExtResource("5_e727v")]
+position = Vector2(696, -530)
 
 [node name="HUD" type="CanvasLayer" parent="."]
 script = ExtResource("6_275kw")
@@ -682,11 +708,11 @@ theme_override_font_sizes/font_size = 10
 text = "0"
 
 [node name="TileMap" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAAAAAwAAAAGAAEAAAAAAA0AAAAGAAIAAAABAAwAAAAHAAEAAAABAA0AAAAHAAIAAAACAAwAAAAHAAEAAAACAA0AAAAHAAIAAAADAAwAAAAHAAEAAAADAA0AAAAHAAIAAAAEAAwAAAAHAAEAAAAEAA0AAAAHAAIAAAAAAAkAAAAGAAAAAAAAAAoAAAAGAAEAAAAAAAsAAAAGAAEAAAABAAkAAAAHAAAAAAACAAkAAAAHAAAAAAADAAkAAAAHAAAAAAAEAAkAAAAHAAAAAAAFAAkAAAAHAAAAAAAGAAkAAAAHAAAAAAAHAAkAAAAHAAAAAAAIAAkAAAAHAAAAAAAHAAwAAAAHAAEAAAABAAoAAAAHAAEAAAABAAsAAAAHAAEAAAACAAsAAAAHAAEAAAACAAoAAAAHAAEAAAADAAoAAAAHAAEAAAADAAsAAAAHAAEAAAAEAAsAAAAHAAEAAAAEAAoAAAAHAAEAAAAFAAsAAAAHAAEAAAAFAAoAAAAHAAEAAAAGAAoAAAAHAAEAAAAHAAoAAAAHAAEAAAAHAAsAAAAHAAEAAAAGAAwAAAAHAAEAAAAFAAwAAAAHAAEAAAAGAAsAAAAHAAEAAAAJAAkAAAAHAAAAAAAKAAkAAAAIAAAAAAAKAAoAAAAIAAEAAAAKAAsAAAAIAAEAAAAKAAwAAAAIAAEAAAAFAA0AAAAHAAIAAAAGAA0AAAAHAAIAAAAHAA0AAAAHAAIAAAAIAA0AAAAHAAIAAAAJAA0AAAAHAAIAAAAKAA0AAAAIAAIAAAAIAAoAAAAHAAEAAAAJAAoAAAAHAAEAAAAJAAsAAAAHAAEAAAAJAAwAAAAHAAEAAAAIAAwAAAAHAAEAAAAIAAsAAAAHAAEAAAA+APz/AAAGAAAAAAA+AP3/AAAGAAEAAAA/APz/AAAHAAAAAAA/AP3/AAAHAAEAAABAAPz/AAAHAAAAAABAAP3/AAAHAAEAAABBAPz/AAAHAAAAAABBAP3/AAAHAAEAAABCAPz/AAAHAAAAAABCAP3/AAAHAAEAAABDAPz/AAAHAAAAAABDAP3/AAAHAAEAAABEAPz/AAAHAAAAAABEAP3/AAAHAAEAAABFAPz/AAAIAAAAAABFAP3/AAAIAAEAAAA+AP7/AAAGAAIAAAA/AP7/AAAHAAIAAABAAP7/AAAHAAIAAABBAP7/AAAHAAIAAABCAP7/AAAHAAIAAABDAP7/AAAHAAIAAABEAP7/AAAHAAIAAABFAP7/AAAIAAIAAAATAP3/AAARAAQAAAAUAP3/AAATAAQAAAATAP7/AAARAAYAAAAUAP7/AAATAAYAAAA=")
+tile_map_data = PackedByteArray("AAAAAAwAAAAGAAUAAAAAAA0AAAAGAAYAAAABAAwAAAAHAAUAAAABAA0AAAAHAAYAAAACAAwAAAAHAAUAAAACAA0AAAAHAAYAAAADAAwAAAAHAAUAAAADAA0AAAAHAAYAAAAEAAwAAAAHAAUAAAAEAA0AAAAHAAYAAAAAAAkAAAAGAAQAAAAAAAoAAAAGAAUAAAAAAAsAAAAGAAUAAAABAAkAAAAHAAQAAAACAAkAAAAHAAQAAAADAAkAAAAHAAQAAAAEAAkAAAAHAAQAAAAFAAkAAAAHAAQAAAAGAAkAAAAHAAQAAAAHAAkAAAAHAAQAAAAIAAkAAAAHAAQAAAAHAAwAAAAHAAUAAAABAAoAAAAHAAUAAAABAAsAAAAHAAUAAAACAAsAAAAHAAUAAAACAAoAAAAHAAUAAAADAAoAAAAHAAUAAAADAAsAAAAHAAUAAAAEAAsAAAAHAAUAAAAEAAoAAAAHAAUAAAAFAAsAAAAHAAUAAAAFAAoAAAAHAAUAAAAGAAoAAAAHAAUAAAAHAAoAAAAHAAUAAAAHAAsAAAAHAAUAAAAGAAwAAAAHAAUAAAAFAAwAAAAHAAUAAAAGAAsAAAAHAAUAAAAJAAkAAAAHAAQAAAAKAAkAAAAIAAQAAAAKAAoAAAAIAAUAAAAKAAsAAAAIAAUAAAAKAAwAAAAIAAUAAAAFAA0AAAAHAAYAAAAGAA0AAAAHAAYAAAAHAA0AAAAHAAYAAAAIAA0AAAAHAAYAAAAJAA0AAAAHAAYAAAAKAA0AAAAIAAYAAAAIAAoAAAAHAAUAAAAJAAoAAAAHAAUAAAAJAAsAAAAHAAUAAAAJAAwAAAAHAAUAAAAIAAwAAAAHAAUAAAAIAAsAAAAHAAUAAAATAP3/AAANAAUAAAAUAP3/AAAOAAUAAAATAP7/AAANAAYAAAAUAP7/AAAOAAYAAAATAPD/AAAGAAQAAAATAPH/AAAGAAUAAAATAPL/AAAGAAYAAAAUAPD/AAAHAAQAAAAUAPH/AAAHAAUAAAAUAPL/AAAHAAYAAAAVAPD/AAAHAAQAAAAVAPH/AAAHAAUAAAAVAPL/AAAHAAYAAAAWAPD/AAAHAAQAAAAWAPH/AAAHAAUAAAAWAPL/AAAHAAYAAAAXAPD/AAAHAAQAAAAXAPH/AAAHAAUAAAAXAPL/AAAHAAYAAAAYAPD/AAAHAAQAAAAYAPH/AAAHAAUAAAAYAPL/AAAHAAYAAAAZAPD/AAAHAAQAAAAZAPH/AAAHAAUAAAAZAPL/AAAHAAYAAAAaAPD/AAAHAAQAAAAbAPD/AAAHAAQAAAAcAPD/AAAHAAQAAAAdAPD/AAAHAAQAAAAeAPD/AAAHAAQAAAAfAPD/AAAHAAQAAAAgAPD/AAAHAAQAAAAhAPD/AAAIAAQAAAAhAPH/AAAIAAUAAAAhAPL/AAAIAAYAAAAgAPL/AAAHAAYAAAAfAPL/AAAHAAYAAAAeAPL/AAAHAAYAAAAdAPL/AAAHAAYAAAAcAPL/AAAHAAYAAAAbAPL/AAAHAAYAAAAaAPL/AAAHAAYAAAAaAPH/AAAHAAUAAAAbAPH/AAAHAAUAAAAcAPH/AAAHAAUAAAAdAPH/AAAHAAUAAAAeAPH/AAAHAAUAAAAfAPH/AAAHAAUAAAAgAPH/AAAHAAUAAAAvAN3/AAARAAQAAAAwAN3/AAASAAQAAAAxAN3/AAASAAQAAAAyAN3/AAASAAQAAAAzAN3/AAASAAQAAAA0AN3/AAASAAQAAAA1AN3/AAASAAQAAAA2AN3/AAATAAQAAAAvAN7/AAARAAUAAAAvAN//AAARAAYAAAAwAN//AAASAAYAAAAxAN//AAASAAYAAAAyAN//AAASAAYAAAAzAN//AAASAAYAAAA0AN//AAASAAYAAAA1AN//AAASAAYAAAA2AN//AAATAAYAAAA2AN7/AAATAAUAAAA1AN7/AAASAAUAAAA0AN7/AAASAAUAAAAzAN7/AAASAAUAAAAwAN7/AAASAAUAAAAxAN7/AAASAAUAAAAyAN7/AAASAAUAAAA=")
 tile_set = SubResource("TileSet_ja28n")
 
 [node name="Flag" type="Area2D" parent="."]
-position = Vector2(1116, -96)
+position = Vector2(859, -592)
 script = ExtResource("10_fsfnu")
 level = "res://Scenes/level_4.tscn"
 metadata/_edit_group_ = true
@@ -711,7 +737,7 @@ shape = SubResource("RectangleShape2D_b2t21")
 position = Vector2(77, 106)
 
 [node name="Fruit1" type="Area2D" parent="Frutas"]
-position = Vector2(9, 24)
+position = Vector2(-13, 27)
 script = ExtResource("12_hprtc")
 metadata/_edit_group_ = true
 
@@ -725,15 +751,85 @@ frame_progress = 0.148033
 visible = false
 shape = SubResource("CapsuleShape2D_wlldx")
 
+[node name="Fruit3" type="Area2D" parent="Frutas"]
+position = Vector2(27, 27)
+script = ExtResource("12_hprtc")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit3"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.148033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit3"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit4" type="Area2D" parent="Frutas"]
+position = Vector2(67, 27)
+script = ExtResource("12_hprtc")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit4"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.148033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit4"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit5" type="Area2D" parent="Frutas"]
+position = Vector2(320, -8)
+script = ExtResource("12_hprtc")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit5"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.148033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit5"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
+[node name="Fruit2" type="Area2D" parent="Frutas"]
+position = Vector2(150, -193)
+script = ExtResource("12_hprtc")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Frutas/Fruit2"]
+sprite_frames = SubResource("SpriteFrames_45bf0")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.148033
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frutas/Fruit2"]
+visible = false
+shape = SubResource("CapsuleShape2D_wlldx")
+
 [node name="moving_platform" parent="." instance=ExtResource("14_cp4s1")]
 position = Vector2(334, 126)
 distance = -110
 
 [node name="moving_platform2" parent="." instance=ExtResource("14_cp4s1")]
 position = Vector2(408, -39)
-distance = -230
+distance = -175
+move_horizontal = false
+
+[node name="moving_platform3" parent="." instance=ExtResource("14_cp4s1")]
+position = Vector2(244, -30)
+distance = 220
 move_horizontal = false
 
 [connection signal="area_entered" from="Saw" to="Saw" method="_on_area_entered"]
+[connection signal="area_entered" from="Saw2" to="Saw2" method="_on_area_entered"]
 [connection signal="area_entered" from="Flag" to="Flag" method="_on_area_entered"]
 [connection signal="area_entered" from="Frutas/Fruit1" to="Frutas/Fruit1" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit3" to="Frutas/Fruit3" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit4" to="Frutas/Fruit4" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit5" to="Frutas/Fruit5" method="_on_area_entered"]
+[connection signal="area_entered" from="Frutas/Fruit2" to="Frutas/Fruit2" method="_on_area_entered"]
