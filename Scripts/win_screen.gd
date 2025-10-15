@@ -5,7 +5,7 @@ func _ready():
 	get_tree().paused = true
 	
 	# Cria um timer para voltar ao menu principal após 4 segundos.
-	await get_tree().create_timer(4.0, true, true, true).timeout
+	await get_tree().create_timer(0.4, true, true, true).timeout
 	
 	# Despausa o jogo antes de mudar de cena para evitar problemas.
 	get_tree().paused = false
